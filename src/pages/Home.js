@@ -3,7 +3,23 @@ import Web3 from 'web3'
 import 'bootstrap'
 import '../css/style.css'
 import '../css/responsive.css'
+
 import Sliderbg from '../images/slider-bg.jpg'
+import Pricingbg from '../images/pricing-bg.jpg'
+import w1 from '../images/w1.png'
+import w2 from '../images/w2.png'
+import w3 from '../images/w3.png'
+import aboutimg from '../images/about-img.jpg'
+import c1 from '../images/c1.jfif'
+import c2 from '../images/c2.jfif'
+
+
+
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import {  } from '@fortawesome/free-solid-svg-icons'
+
+
 import React, {Component} from "react";//import "../layout/Announcements.css";
 
 
@@ -27,14 +43,12 @@ class Home extends Component {
         super(props)
         this.state = { account: '' }
       }
+
+    
       
       render() {
         return (
-          <div><div className="container">
-                <h1>Hello, World!</h1>
-                <h1>{this.state.account}</h1>
-                <p></p>
-            </div>
+          <div>
             
             <div class="hero_area">
                     <div class="bg-box">
@@ -84,10 +98,10 @@ class Home extends Component {
                         <div class="container">
                             <div class="detail-box col-md-9 mx-auto px-0">
                                 <h1>
-                                    Finding Parking Lots Made Easy
+                                    Find Parking Lot ,Buy With Crypto
                                 </h1>
                                 <p>
-                                    Necessitatibus non ducimus hic dolor? Maiores itaque vitae sit blanditiis porro, a expedita ex. Totam vel sed obcaecati. Placeat maxime asperiores deleniti tenetur officiis laboriosam laborum a nihil quisquam quis!
+                                Your conncected with "{this.state.account}" wallet
                                 </p>
                             </div>
                             <div class="find_form_container">
@@ -116,9 +130,9 @@ class Home extends Component {
                                         </div>
                                         <div class="col-md-4 px-0">
                                             <div class="form-group">
-                                                <label for="">Your Mobile Number</label>
+                                                <label for="">Your Number Plate</label>
                                                 <div class="input-group ">
-                                                    <input type="text" class="form-control" placeholder="01 2345678910" />
+                                                    <input type="text" class="form-control" placeholder="1-GMB-242" />
                                                 </div>
                                             </div>
                                         </div>
@@ -147,7 +161,7 @@ class Home extends Component {
                         <div class="row">
                             <div class="col-lg-6 ">
                                 <div class="img-box">
-                                    <img src="images/about-img.jpg" alt=""/>
+                                    <img src={aboutimg} alt=""/>
                                     </div>
                             </div>
                             <div class="col-lg-6">
@@ -187,7 +201,7 @@ class Home extends Component {
                             <div class="col-md-6 col-lg-4 mx-auto">
                                 <div class="box">
                                     <div class="img-box">
-                                        <img src="images/w1.png" alt=""/>
+                                        <img src={w1} alt=""/>
                                         </div>
                                     <div class="detail-box">
                                         <h4>
@@ -202,7 +216,7 @@ class Home extends Component {
                             <div class="col-md-6 col-lg-4 mx-auto">
                                 <div class="box">
                                     <div class="img-box">
-                                        <img src="images/w2.png" alt=""/>
+                                        <img src={w2} alt=""/>
                                         </div>
                                     <div class="detail-box">
                                         <h4>
@@ -217,7 +231,7 @@ class Home extends Component {
                             <div class="col-md-6 col-lg-4 mx-auto">
                                 <div class="box ">
                                     <div class="img-box">
-                                        <img src="images/w3.png" alt=""/>
+                                        <img src={w3} alt=""/>
                                         </div>
                                     <div class="detail-box">
                                         <h4>
@@ -233,7 +247,7 @@ class Home extends Component {
                     </div>
                 </section><section class="pricing_section layout_padding">
                     <div class="bg-box">
-                        <img src="images/pricing-bg.jpg" alt=""/>
+                        <img src={Pricingbg} alt=""/>
                         </div>
                     <div class="container">
                         <div class="heading_container heading_center">
@@ -308,19 +322,19 @@ class Home extends Component {
                                         <div class="box">
                                             <div class="detail-box">
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                I have been simping on NFT's for almost 6 months and now that I cashed out in crypto I am happy I can put it to good use!
                                                 </p>
                                             </div>
                                             <div class="client_id">
                                                 <div class="img-box">
-                                                    <img src="images/c1.jpg" alt="" class="img-1"/>
+                                                    <img src={c1} alt="" class="img-1"/>
                                                     </div>
                                                 <div class="name">
                                                     <h6>
-                                                        Lisa Adams
+                                                        Yassin Mahouti
                                                     </h6>
                                                     <p>
-                                                        Magna
+                                                        Chômage
                                                     </p>
                                                 </div>
                                             </div>
@@ -330,19 +344,19 @@ class Home extends Component {
                                         <div class="box">
                                             <div class="detail-box">
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    I recently started investing in crypto and I can already put good use of it, I can park my car with digital currency amazing!
                                                 </p>
                                             </div>
                                             <div class="client_id">
                                                 <div class="img-box">
-                                                    <img src="images/c2.jpg" alt="" class="img-1"/>
+                                                    <img src={c2} alt="" class="img-1"/>
                                                     </div>
                                                 <div class="name">
                                                     <h6>
-                                                        Michel Trout
+                                                        Amine Boutechdat
                                                     </h6>
                                                     <p>
-                                                        Magna
+                                                        Computacenter
                                                     </p>
                                                 </div>
                                             </div>
@@ -376,7 +390,7 @@ class Home extends Component {
                                                 <i class="fa fa-twitter" aria-hidden="true"></i>
                                             </a>
                                             <a href="">
-                                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            <FontAwesomeIcon icon={['fab', 'linkedin']}/>
                                             </a>
                                             <a href="">
                                                 <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -415,19 +429,14 @@ class Home extends Component {
                                         <a href="">
                                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                                             <span>
-                                                Location
+                                                Location: Brussels
                                             </span>
                                         </a>
-                                        <a href="">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                            <span>
-                                                Call : +01 123455678990
-                                            </span>
-                                        </a>
+                                        
                                         <a href="">
                                             <i class="fa fa-envelope" aria-hidden="true"></i>
                                             <span>
-                                                Email : demo@gmail.com
+                                                Email : lockchaindeveloppement@gmail.com
                                             </span>
                                         </a>
                                     </div>
@@ -438,8 +447,8 @@ class Home extends Component {
                 </section><footer class="footer_section">
                     <div class="container">
                         <p>
-                            &copy; <span id="displayYear"></span> All Rights Reserved By
-                            <a href="https://html.design/">Free Html Templates</a>
+                            &copy; <span id="displayYear"></span> All Rights Reserved By 
+                            <a href="/"> Lockchain</a>
                         </p>
                     </div>
                 </footer></div>
