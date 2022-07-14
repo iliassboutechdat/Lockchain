@@ -161,7 +161,7 @@ class Home extends Component {
                         <div class="row">
                             <div class="col-lg-6 ">
                                 <div class="img-box">
-                                    <img src={aboutimg} alt=""/>
+                                    <img src={aboutimg} alt="" size="1000%" />
                                     </div>
                             </div>
                             <div class="col-lg-6">
